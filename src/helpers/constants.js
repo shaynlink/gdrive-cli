@@ -1,0 +1,4 @@
+export const BASE_CONFIG = {
+  GCLOUD_CREDENTIAL_PATH: '',
+  GCLOUD_TOKEN_PATH: ''
+}
