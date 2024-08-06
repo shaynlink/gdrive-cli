@@ -4,6 +4,8 @@ import configList from './commands/Config-List.js';
 import configGet from './commands/Config-Get.js';
 import files from './commands/Files.js';
 import file from './commands/File.js';
+import move from './commands/Move.js';
+import copy from './commands/Copy.js';
 
 /**
  * @param {import('commander').Command} program 
@@ -14,6 +16,8 @@ export default function registers(program) {
   program.addCommand(configGet);
   program.addCommand(files);
   program.addCommand(file);
+  program.addCommand(move);
+  program.addCommand(copy);
 
   program.hook('preAction', ({ args }) => {
     const [cmd] = args;
