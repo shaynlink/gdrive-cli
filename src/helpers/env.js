@@ -3,9 +3,7 @@ import { resolve, join } from 'node:path';
 import { env } from 'node:process';
 import { execSync } from 'node:child_process';
 import { BASE_CONFIG } from './constants.js';
-import debug from 'debug'
-
-const log = debug('gdrive-cli:env');
+import { log } from './utils.js';
 
 export function prepareEnv() {
   const homeDir = env.HOME || env.HOMEPATH || env.USERPROFILE || getHomeDirByCLI();

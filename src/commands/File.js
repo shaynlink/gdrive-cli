@@ -23,9 +23,7 @@ export default new Command('file')
     console.log('File size:', chalk.blue(convertBytes(data.size)));
     console.log('File permissions:', chalk.blue(data.permissions.map(p => `${p.role} : ${p.emailAddress}`).join(', ')));
 
-    if (data.parents) {
-      console.log('Parents:', chalk.blue(data.parents.join(', ')));
-    }
+    data.parents ?? console.log('Parents:', chalk.blue(data.parents.join(', ')));
 
     if (download) {
       const dest = resolve(join(download, data.name));

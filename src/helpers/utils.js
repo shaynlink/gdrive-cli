@@ -1,3 +1,7 @@
+import debug from 'debug'
+
+export const log = debug('gdrive-cli');
+
 const kilobyte = 1024;
 const megabyte = kilobyte * 1024;
 const gigabyte = megabyte * 1024;
