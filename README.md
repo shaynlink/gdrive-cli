@@ -47,7 +47,7 @@ DEBUG=gdrive-cli gdrive [command] [options]
 ## Commands
 
 - [ ] `auth` - Authenticate with Google Drive
-- [ ] `ls` - List files in Google Drive
+- [x] `ls` - List files in Google Drive
 - [ ] `upload` - Upload a file to Google Drive
 - [x] `config-set` - Set configuration options
 - [x] `config-get` - Get configuration options
