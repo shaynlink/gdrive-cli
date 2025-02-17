@@ -58,5 +58,7 @@ DEBUG=gdrive-cli gdrive [command] [options]
 - [x] `file` - Display file information
 - [x] `move-all` - Move all files from one folder to another
 - [x] `move` - Move a file from one folder to another
-- [] `remove` - Remove a file from Google Drive
-- [] `remove-all` - Remove all files from Google Drive
+- [ ] `remove` - Remove a file from Google Drive
+- [ ] `remove-all` - Remove all files from Google Drive
+- [x] `mkdir` - Creata a new folder
+  - [ ] Add -r / --recursion option to create nested folders

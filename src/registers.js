@@ -8,6 +8,7 @@ import move from './commands/Move.js';
 import moveAll from './commands/Move-All.js';
 import copy from './commands/Copy.js';
 import copyAll from './commands/Copy-All.js';
+import mkdir from './commands/Mkdir.js';
 
 /**
  * @param {import('commander').Command} program 
@@ -22,6 +23,7 @@ export default function registers(program) {
   program.addCommand(moveAll);
   program.addCommand(copy);
   program.addCommand(copyAll);
+  program.addCommand(mkdir);
 
   program.hook('preAction', ({ args }) => {
     const [cmd] = args;
